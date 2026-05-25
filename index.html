@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otorrinolaringologista em São Paulo | Dra. Giuliana Graicer</title>
+<meta name="description" content="Dra. Giuliana Graicer, otorrinolaringologista em Cerqueira César, São Paulo. Diagnóstico na consulta. Respiração, rinite, apneia e saúde ORL infantil. CRM SP 210131.">
+<meta name="keywords" content="otorrinolaringologista SP, rinite SP, apneia do sono SP, otorrino Jardins, fellowship Harvard otorrino">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --rose:#B5827A; --rose-2:#C49991; --rose-pale:#EDD8D5; --rose-faint:#F8F1F0;
+  --sand:#E8E0D8; --sand-2:#F2EDE8; --cream:#FAFAF9;
+  --ink:#1A1917; --ink-2:#2E2C2A; --muted:#6B6560; --muted-2:#9A9590;
+  --border:rgba(26,25,23,0.07); --border-2:rgba(26,25,23,0.12);
+  --glass:rgba(255,255,255,0.78); --max-w:1250px; --ease:cubic-bezier(0.16,1,0.3,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Geist',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--cream);color:var(--ink);font-weight:400;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px}
+
+/* CONTAINER */
+.container{max-width:var(--max-w);margin:0 auto;padding:0 clamp(1.25rem,3vw,2.5rem)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;background:rgba(250,250,249,0.85);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 clamp(1.25rem,3vw,2.5rem);height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:34px;width:auto;display:block}
+.nav-logo-fallback{font-size:0.88rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+.nav-links a{font-size:0.78rem;color:var(--muted);text-decoration:none;padding:7px 11px;border-radius:7px;transition:all 0.2s;font-weight:400;letter-spacing:-0.01em}
+.nav-links a:hover{color:var(--ink);background:var(--sand-2)}
+.nav-cta{margin-left:6px;background:var(--ink)!important;color:var(--cream)!important;padding:8px 16px!important;border-radius:8px!important;font-size:0.76rem!important;font-weight:500!important}
+.nav-cta:hover{background:var(--rose)!important}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:20px;height:1.5px;background:var(--ink);border-radius:2px}
+
+/* HERO */
+#home{min-height:100vh;padding-top:64px;display:grid;grid-template-columns:1fr 1fr;position:relative;z-index:1;overflow:hidden}
+.glow-a{position:absolute;top:-15%;left:-8%;pointer-events:none;z-index:0;width:55vw;height:55vw;background:radial-gradient(ellipse at center,rgba(181,130,122,0.15) 0%,transparent 65%)}
+.glow-b{position:absolute;bottom:-5%;right:-5%;pointer-events:none;z-index:0;width:40vw;height:40vw;background:radial-gradient(ellipse at center,rgba(232,224,216,0.35) 0%,transparent 65%)}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:clamp(3rem,6vw,7rem) clamp(1.5rem,4vw,5rem) clamp(3rem,5vw,6rem) clamp(1.25rem,8vw,8rem);position:relative;z-index:2;max-width:680px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--glass);border:1px solid var(--border-2);border-radius:100px;padding:5px 14px 5px 7px;font-size:0.7rem;font-weight:500;color:var(--muted);width:fit-content;margin-bottom:1.75rem;backdrop-filter:blur(8px);letter-spacing:-0.01em}
+.badge-pip{width:20px;height:20px;border-radius:50%;background:var(--rose-faint);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.badge-pip::after{content:'';width:7px;height:7px;border-radius:50%;background:var(--rose)}
+.hero-h1{font-size:clamp(2.4rem,4.5vw,4.5rem);font-weight:700;line-height:1.04;letter-spacing:-0.045em;color:var(--ink);margin-bottom:1.25rem}
+.hero-h1 .accent{color:var(--rose)}
+.hero-sub{font-size:clamp(0.87rem,1.1vw,1rem);color:var(--muted);line-height:1.75;max-width:440px;margin-bottom:2rem;letter-spacing:-0.01em}
+.hero-bullets{list-style:none;display:flex;flex-direction:column;gap:0.55rem;margin-bottom:2.25rem}
+.hero-bullets li{display:flex;align-items:center;gap:10px;font-size:0.81rem;color:var(--ink-2);letter-spacing:-0.01em}
+.hero-bullets li svg{width:15px;height:15px;flex-shrink:0;color:var(--rose)}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:7px;font-family:'Geist',sans-serif;font-size:0.82rem;font-weight:500;padding:11px 20px;border-radius:9px;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s var(--ease);letter-spacing:-0.01em;white-space:nowrap}
+.btn svg{transition:transform 0.2s var(--ease)}
+.btn:hover svg{transform:translate(2px,-2px)}
+.btn-dark{background:var(--ink);color:var(--cream)}
+.btn-dark:hover{background:var(--rose);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--border-2)}
+.btn-outline:hover{background:var(--sand-2)}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-light:hover{background:var(--rose);color:#fff;transform:translateY(-1px)}
+.hero-meta{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border);display:flex;gap:2rem;flex-wrap:wrap}
+.hm-item{display:flex;flex-direction:column;gap:2px}
+.hm-num{font-size:1.05rem;font-weight:700;color:var(--ink);letter-spacing:-0.04em;font-family:'Geist Mono',monospace}
+.hm-label{font-size:0.67rem;color:var(--muted);letter-spacing:-0.01em}
+.hero-right{position:relative;overflow:hidden;z-index:2}
+.hero-right::before{content:'';position:absolute;inset:0;background:linear-gradient(145deg,var(--sand-2) 0%,var(--rose-faint) 50%,var(--sand) 100%)}
+.hero-right img{width:100%;height:100%;object-fit:cover;object-position:top center;position:relative;z-index:1;mix-blend-mode:multiply;opacity:0.92}
+.hero-float{position:absolute;bottom:36px;left:-1px;z-index:10;background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--border-2);border-radius:12px;padding:16px 20px;max-width:230px;box-shadow:0 4px 24px rgba(0,0,0,0.07)}
+.hf-label{font-size:0.61rem;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:5px}
+.hf-title{font-size:0.84rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;line-height:1.3;margin-bottom:3px}
+.hf-sub{font-size:0.69rem;color:var(--muted);line-height:1.5}
+
+/* SECTION */
+.section{padding:clamp(4rem,7vw,7rem) 0;position:relative;z-index:1}
+.section-white{background:#fff}
+.section-sand{background:var(--sand-2)}
+.section-cream{background:var(--cream)}
+.section-dark{background:var(--ink-2)}
+.tag{display:inline-flex;align-items:center;gap:7px;font-size:0.67rem;font-weight:600;color:var(--rose);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.85rem}
+.tag::before{content:'';display:block;width:18px;height:1.5px;background:var(--rose);border-radius:2px;flex-shrink:0}
+.tag-dark{color:rgba(255,255,255,0.35)}
+.tag-dark::before{background:rgba(255,255,255,0.2)}
+.s-title{font-size:clamp(1.75rem,2.8vw,2.75rem);font-weight:700;line-height:1.1;letter-spacing:-0.035em;color:var(--ink)}
+.s-title .dim{color:var(--muted-2)}
+.s-title-white{color:#fff}
+.s-lead{font-size:0.91rem;color:var(--muted);line-height:1.78;letter-spacing:-0.01em;max-width:520px}
+.s-lead-dark{color:rgba(255,255,255,0.42)}
+
+/* TRATA */
+.trata-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,8rem);align-items:start}
+.trata-left .s-lead{margin-top:1rem;margin-bottom:2rem}
+.chip-grid{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:2rem}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;color:var(--ink-2);background:var(--sand-2);border:1px solid var(--border);border-radius:100px;padding:6px 12px;letter-spacing:-0.01em;transition:all 0.2s;cursor:default}
+.chip:hover{background:var(--rose-faint);border-color:var(--rose-pale);color:var(--rose)}
+.chip::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--rose-2);flex-shrink:0}
+.cond-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:1.5rem}
+.cond-cat{background:var(--rose-faint);border:1px solid var(--rose-pale);border-radius:10px;padding:15px}
+.cond-cat h4{font-size:0.69rem;font-weight:600;color:var(--rose);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.55rem}
+.cond-cat ul{list-style:none}
+.cond-cat li{font-size:0.77rem;color:var(--ink-2);padding:3px 0;letter-spacing:-0.01em;border-bottom:1px solid var(--rose-pale)}
+.cond-cat li:last-child{border:none}
+.cond-cat li::before{content:'— ';color:var(--rose-2)}
+.sit-cards{display:flex;flex-direction:column;gap:10px}
+.sit-card{background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:19px;transition:all 0.25s var(--ease);cursor:default}
+.sit-card:hover{background:#fff;border-color:var(--rose-pale);box-shadow:0 4px 20px rgba(181,130,122,0.1);transform:translateY(-2px)}
+.sc-icon{width:33px;height:33px;border-radius:9px;background:var(--rose-faint);display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.sc-icon svg{width:16px;height:16px;color:var(--rose)}
+.sit-card h3{font-size:0.86rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;margin-bottom:5px;line-height:1.3}
+.sit-card p{font-size:0.79rem;color:var(--muted);line-height:1.72;letter-spacing:-0.01em}
+.otoscope-banner{margin-top:1.5rem;background:var(--ink);border-radius:12px;padding:18px 22px;display:flex;gap:13px;align-items:flex-start}
+.oto-icon{width:36px;height:36px;flex-shrink:0;border-radius:9px;background:rgba(181,130,122,0.2);display:flex;align-items:center;justify-content:center}
+.oto-icon svg{width:18px;height:18px;color:var(--rose-2)}
+.oto-text h4{font-size:0.8rem;font-weight:600;color:#fff;letter-spacing:-0.02em;margin-bottom:4px}
+.oto-text p{font-size:0.76rem;color:rgba(255,255,255,0.42);line-height:1.65;letter-spacing:-0.01em}
+
+/* COMO FUNCIONA */
+.funciona-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,5vw,7rem);align-items:center}
+.funciona-steps{display:flex;flex-direction:column;gap:0}
+.f-step{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--border)}
+.f-step:last-child{border:none}
+.f-step-num{font-family:'Geist Mono',monospace;font-size:0.66rem;font-weight:500;color:var(--muted-2);letter-spacing:0.04em;padding-top:3px}
+.f-step h4{font-size:0.86rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;margin-bottom:4px}
+.f-step p{font-size:0.79rem;color:var(--muted);line-height:1.7;letter-spacing:-0.01em}
+.funciona-img{position:relative}
+.funciona-img img{width:100%;height:510px;object-fit:cover;object-position:top;border-radius:16px}
+.fi-badge{position:absolute;bottom:22px;right:22px;background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--border-2);border-radius:10px;padding:13px 17px;box-shadow:0 4px 20px rgba(0,0,0,0.08)}
+.fi-badge p{font-size:0.72rem;color:var(--muted);letter-spacing:-0.01em;line-height:1.55}
+.fi-badge strong{color:var(--ink);font-weight:600}
+
+/* SOBRE */
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,8rem);align-items:center}
+.sobre-imgs{position:relative;height:550px}
+.si-main{position:absolute;top:0;left:0;width:72%;height:88%;object-fit:cover;object-position:top;border-radius:16px}
+.si-sec{position:absolute;bottom:0;right:0;width:50%;height:52%;object-fit:cover;object-position:top;border-radius:16px;border:3px solid #fff;box-shadow:0 8px 32px rgba(0,0,0,0.1)}
+.si-stat{position:absolute;top:28px;right:0;background:#fff;border:1px solid var(--border);border-radius:10px;padding:13px 17px;box-shadow:0 4px 16px rgba(0,0,0,0.06);z-index:10}
+.si-stat-n{font-size:1.25rem;font-weight:700;color:var(--rose);letter-spacing:-0.04em;font-family:'Geist Mono',monospace;line-height:1}
+.si-stat-l{font-size:0.65rem;color:var(--muted);margin-top:4px}
+.sobre-text .s-title{margin:0.6rem 0 1rem}
+.sobre-text .s-lead{margin-bottom:1.5rem}
+.philosophy{background:var(--rose-faint);border:1px solid var(--rose-pale);border-radius:12px;padding:17px 21px;margin-bottom:1.5rem}
+.philosophy h4{font-size:0.77rem;font-weight:600;color:var(--rose);letter-spacing:-0.01em;margin-bottom:5px}
+.philosophy p{font-size:0.8rem;color:var(--ink-2);line-height:1.75;letter-spacing:-0.01em}
+.timeline{list-style:none;margin-bottom:2rem}
+.tl{display:grid;grid-template-columns:86px 1fr;gap:13px;padding:11px 0;border-bottom:1px solid var(--border)}
+.tl-yr{font-family:'Geist Mono',monospace;font-size:0.67rem;font-weight:500;color:var(--muted-2);letter-spacing:0.01em;padding-top:2px;line-height:1.4}
+.tl h5{font-size:0.83rem;font-weight:500;color:var(--ink);letter-spacing:-0.02em;margin-bottom:2px}
+.tl p{font-size:0.73rem;color:var(--muted);letter-spacing:-0.01em}
+
+/* DIFERENCIAIS */
+.dif-header{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:3.5rem}
+.dif-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.06)}
+.dif-card{background:rgba(255,255,255,0.03);padding:1.75rem;transition:background 0.25s}
+.dif-card:hover{background:rgba(255,255,255,0.07)}
+.dc-num{font-family:'Geist Mono',monospace;font-size:0.64rem;font-weight:500;color:rgba(255,255,255,0.18);letter-spacing:0.04em;margin-bottom:1.2rem}
+.dc-icon{width:37px;height:37px;border-radius:9px;background:rgba(181,130,122,0.15);border:1px solid rgba(181,130,122,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.dc-icon svg{width:18px;height:18px;color:var(--rose-2)}
+.dif-card h3{font-size:0.88rem;font-weight:500;color:#fff;letter-spacing:-0.02em;margin-bottom:0.6rem;line-height:1.3}
+.dif-card p{font-size:0.77rem;color:rgba(255,255,255,0.36);line-height:1.75;letter-spacing:-0.01em}
+.dif-cta-bar{margin-top:2.75rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:2rem 2.25rem;display:flex;align-items:center;justify-content:space-between;gap:2.5rem;flex-wrap:wrap}
+.dcb-quote{font-size:clamp(0.95rem,1.7vw,1.45rem);font-weight:600;color:#fff;letter-spacing:-0.03em;line-height:1.3}
+.dcb-quote span{color:rgba(181,130,122,0.85)}
+
+/* ESPECIALIDADES */
+.espec-layout{display:grid;grid-template-columns:196px 1fr;gap:2.5rem;margin-top:2.5rem}
+.espec-nav{display:flex;flex-direction:column;gap:3px;border-right:1px solid var(--border);padding-right:1.5rem}
+.etab{background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:9px;font-family:'Geist',sans-serif;font-size:0.79rem;font-weight:400;color:var(--muted);padding:9px 11px;border-radius:8px;text-align:left;width:100%;letter-spacing:-0.01em;transition:all 0.2s}
+.etab:hover{background:var(--sand-2);color:var(--ink)}
+.etab.active{background:var(--rose-faint);color:var(--rose);font-weight:500}
+.etab-dot{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:0.4;flex-shrink:0}
+.etab.active .etab-dot{opacity:1}
+.epanel{display:none}
+.epanel.active{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.epanel h3{font-size:clamp(1.2rem,2vw,1.8rem);font-weight:700;color:var(--ink);letter-spacing:-0.035em;line-height:1.2;margin-bottom:0.85rem}
+.epanel p{font-size:0.82rem;color:var(--muted);line-height:1.8;letter-spacing:-0.01em;margin-bottom:0.8rem}
+.elist{list-style:none;margin:1.2rem 0}
+.elist li{display:flex;align-items:center;gap:10px;font-size:0.79rem;color:var(--ink-2);padding:9px 0;border-bottom:1px solid var(--border);letter-spacing:-0.01em}
+.elist li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--rose-pale);border:1.5px solid var(--rose-2);flex-shrink:0}
+.epanel-img img{width:100%;height:390px;object-fit:cover;object-position:top;border-radius:14px}
+
+/* DEPOIMENTOS */
+.depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:2.5rem}
+.depo{background:#fff;border:1px solid var(--border);border-radius:12px;padding:22px;transition:all 0.25s var(--ease)}
+.depo:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,0.06)}
+.depo-stars{display:flex;gap:3px;margin-bottom:11px}
+.depo-stars svg{width:12px;height:12px;fill:var(--rose-2)}
+.depo-text{font-size:0.82rem;color:var(--ink-2);line-height:1.75;letter-spacing:-0.01em;margin-bottom:15px}
+.depo-author{border-top:1px solid var(--border);padding-top:11px}
+.depo-author strong{display:block;font-size:0.77rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em}
+.depo-author span{font-size:0.69rem;color:var(--muted);letter-spacing:-0.01em}
+
+/* CONTATO */
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,7rem);align-items:start}
+.contato-text .s-title{margin:0.6rem 0 0.9rem}
+.contato-text .s-lead{margin-bottom:2rem}
+.ci-list{display:flex;flex-direction:column;gap:11px;margin-bottom:2rem}
+.ci{display:flex;align-items:center;gap:12px;padding:13px;background:#fff;border:1px solid var(--border);border-radius:10px;transition:border-color 0.2s}
+.ci:hover{border-color:var(--rose-pale)}
+.ci-icon{width:35px;height:35px;border-radius:9px;background:var(--rose-faint);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ci-icon svg{width:16px;height:16px;color:var(--rose)}
+.ci-label{font-size:0.62rem;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:2px}
+.ci-value{font-size:0.82rem;color:var(--ink);letter-spacing:-0.01em}
+.form-box{background:#fff;border:1px solid var(--border);border-radius:14px;padding:1.75rem}
+.form-box h3{font-size:0.98rem;font-weight:700;color:var(--ink);letter-spacing:-0.03em;margin-bottom:3px}
+.form-box p{font-size:0.77rem;color:var(--muted);letter-spacing:-0.01em;margin-bottom:1.5rem}
+.fg{margin-bottom:11px}
+.fg label{display:block;font-size:0.65rem;font-weight:500;color:var(--muted);letter-spacing:0.03em;text-transform:uppercase;margin-bottom:5px}
+.fg input,.fg select,.fg textarea{width:100%;padding:10px 13px;background:var(--cream);border:1px solid var(--border-2);border-radius:7px;font-family:'Geist',sans-serif;font-size:0.82rem;color:var(--ink);outline:none;transition:border-color 0.2s;appearance:none;letter-spacing:-0.01em}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--rose)}
+.fg textarea{resize:vertical;min-height:78px}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* FOOTER */
+footer{background:var(--ink-2);padding:2rem 0}
+.footer-inner{max-width:var(--max-w);margin:0 auto;padding:0 clamp(1.25rem,3vw,2.5rem);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+.footer-logo img{height:26px;width:auto;filter:brightness(0) invert(1);opacity:0.5}
+.footer-logo-fallback{font-size:0.8rem;font-weight:500;color:rgba(255,255,255,0.5);letter-spacing:-0.02em}
+.footer-nav{display:flex;gap:0;list-style:none}
+.footer-nav a{font-size:0.74rem;color:rgba(255,255,255,0.28);text-decoration:none;padding:5px 10px;border-radius:6px;transition:all 0.2s}
+.footer-nav a:hover{color:rgba(255,255,255,0.7)}
+.footer-crm{font-size:0.65rem;color:rgba(255,255,255,0.18);letter-spacing:-0.01em}
+
+/* WA */
+.wa{position:fixed;bottom:26px;right:26px;z-index:200;width:50px;height:50px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:all 0.25s var(--ease)}
+.wa:hover{transform:scale(1.1);box-shadow:0 8px 26px rgba(37,211,102,0.45)}
+.wa svg{width:24px;height:24px;fill:#fff}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(18px);transition:opacity 0.6s var(--ease),transform 0.6s var(--ease)}
+.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:0.07s}.d2{transition-delay:0.14s}.d3{transition-delay:0.21s}.d4{transition-delay:0.28s}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .dif-cards{grid-template-columns:1fr 1fr}
+  .depo-grid{grid-template-columns:1fr 1fr}
+  .espec-layout{grid-template-columns:1fr}
+  .espec-nav{flex-direction:row;flex-wrap:wrap;border-right:none;border-bottom:1px solid var(--border);padding-right:0;padding-bottom:1rem}
+  .epanel.active{grid-template-columns:1fr}
+  .cond-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  #home{grid-template-columns:1fr;min-height:auto}
+  .hero-right{height:65vw;min-height:250px;order:-1}
+  .hero-left{padding:2.5rem 6vw 3rem;max-width:100%}
+  .hero-float{display:none}
+  .trata-grid,.sobre-grid,.contato-grid,.funciona-grid,.dif-header{grid-template-columns:1fr;gap:2.5rem}
+  .dif-cards,.depo-grid{grid-template-columns:1fr}
+  .dif-cta-bar{flex-direction:column;gap:1.5rem}
+  .sobre-imgs{height:300px}
+  .si-sec,.si-stat{display:none}
+  .si-main{width:100%;height:100%}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(250,250,249,0.97);backdrop-filter:blur(20px);padding:1rem clamp(1.25rem,3vw,2.5rem);border-bottom:1px solid var(--border);gap:3px;z-index:99}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .funciona-img img{height:300px}
+  .cond-grid{grid-template-columns:1fr}
+  .fg-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="Ativo_1_2x.png" alt="Dra. Giuliana Graicer" id="logoImg">
+      <span class="nav-logo-fallback" id="logoFallback" style="display:none">Dra. Giuliana Graicer</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#tratamentos">Tratamentos</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="https://wa.me/5511986030172?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" class="nav-cta">Agendar consulta →</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="glow-a"></div><div class="glow-b"></div>
+  <div class="hero-left">
+    <div class="hero-badge rv"><div class="badge-pip"></div>Harvard Medical School · Fellowship 2024</div>
+    <h1 class="hero-h1 rv d1">Otorrinolaringologista<br>em <span class="accent">São Paulo.</span></h1>
+    <p class="hero-sub rv d2">Consultas e tratamentos para respiração, sono, rinite e saúde ORL de adultos e crianças. Diagnóstico na própria consulta. Atendimento particular em Jardim Paulista, SP.</p>
+    <ul class="hero-bullets rv d2">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Nasofibrolaringoscopia e videolaringoscopia na consulta</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Otoscópio digital — você acompanha o exame em tempo real</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Adultos e crianças — clínica e cirurgia ORL</li>
+    </ul>
+    <div class="hero-actions rv d3">
+      <a href="https://wa.me/5511986030172?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" class="btn btn-dark">Agendar pelo WhatsApp<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      <a href="#sobre" class="btn btn-outline">Conhecer a Dra. →</a>
+    </div>
+    <div class="hero-meta rv d4">
+      <div class="hm-item"><span class="hm-num">HC-USP</span><span class="hm-label">Residência médica</span></div>
+      <div class="hm-item"><span class="hm-num">Harvard</span><span class="hm-label">Fellowship 2024</span></div>
+      <div class="hm-item"><span class="hm-num">PUC-SP</span><span class="hm-label">Graduação medicina</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="Giuliana-43.jpg" alt="Dra. Giuliana Graicer, otorrinolaringologista">
+    <div class="hero-float">
+      <div class="hf-label">Formação Internacional</div>
+      <div class="hf-title">Massachusetts Eye and Ear</div>
+      <div class="hf-sub">Harvard Medical School · 2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMENTOS -->
+<section id="tratamentos" class="section section-white">
+  <div class="container">
+    <div class="trata-grid">
+      <div>
+        <span class="tag rv">O que ela trata</span>
+        <h2 class="s-title rv d1">Investigação real.<br><span class="dim">Não só sintoma.</span></h2>
+        <p class="s-lead rv d2">Com investigação detalhada e os exames necessários já na consulta, a Dra. Giuliana ajuda a entender a causa real — e a tratar com precisão. Consulta particular com tempo suficiente para ouvir antes de concluir.</p>
+        <div class="chip-grid rv d3">
+          <span class="chip">Rinite alérgica</span><span class="chip">Nariz entupido crônico</span><span class="chip">Sinusite de repetição</span><span class="chip">Desvio de septo</span><span class="chip">Pólipos nasais</span><span class="chip">Ronco / Apneia</span><span class="chip">Respiração bucal</span><span class="chip">Amigdalite recorrente</span><span class="chip">Rouquidão / Disfonia</span><span class="chip">Pigarro persistente</span><span class="chip">Dificuldade engolir</span><span class="chip">Zumbido (tinnitus)</span><span class="chip">Perda auditiva</span><span class="chip">Tontura / Vertigem</span><span class="chip">Otite de repetição</span><span class="chip">Sono não reparador</span>
+        </div>
+        <div class="cond-grid rv d4">
+          <div class="cond-cat"><h4>Nariz &amp; Respiração</h4><ul><li>Rinite alérgica e não alérgica</li><li>Sinusite crônica e aguda</li><li>Desvio de septo nasal</li><li>Hipertrofia de cornetos</li><li>Pólipos nasais</li><li>Obstrução nasal crônica</li></ul></div>
+          <div class="cond-cat"><h4>Garganta &amp; Voz</h4><ul><li>Amigdalite de repetição</li><li>Faringite crônica / pigarro</li><li>Rouquidão e disfonia</li><li>Refluxo laringofaríngeo</li><li>Sensação de bolo na garganta</li><li>Dificuldade para engolir</li></ul></div>
+          <div class="cond-cat"><h4>Ouvido &amp; Audição</h4><ul><li>Otite externa e média</li><li>Perfuração do tímpano</li><li>Perda auditiva / Presbiacusia</li><li>Zumbido (tinnitus)</li><li>Tontura e vertigem</li><li>Labirintite / VPPB</li></ul></div>
+          <div class="cond-cat"><h4>Sono</h4><ul><li>Ronco</li><li>Apneia obstrutiva do sono</li><li>Sono não reparador</li><li>Cansaço crônico</li></ul></div>
+        </div>
+      </div>
+      <div class="sit-cards">
+        <div class="sit-card rv"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h3>Você já consultou, mas o problema continua.</h3><p>Remédio tomado, retorno feito, resultado igual. Quando o sintoma persiste, geralmente falta investigar a causa estrutural — não só controlar a inflamação.</p></div>
+        <div class="sit-card rv d1"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><h3>Seu filho respira pela boca, ronca ou fica agitado.</h3><p>Adenoide, amígdalas e rinite sem diagnóstico interferem no sono, na imunidade e no desenvolvimento. Avaliação precoce muda o trajeto.</p></div>
+        <div class="sit-card rv d2"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3>O ronco piorou e você acorda cansado.</h3><p>Pode ser apneia obstrutiva do sono — condição séria com consequências cardiovasculares reais quando não tratada. Tem diagnóstico. Tem tratamento.</p></div>
+        <div class="sit-card rv d3"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg></div><h3>Zumbido, tontura ou perda de audição gradual.</h3><p>Sintomas que aparecem aos poucos e são normalizados por anos. Investigar cedo amplia as possibilidades de tratamento e preservação auditiva.</p></div>
+        <div class="otoscope-banner rv d4">
+          <div class="oto-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div class="oto-text"><h4>Otoscópio digital com tela — você vê o que a médica vê</h4><p>O exame do ouvido é realizado com otoscópio digital conectado a uma tela. Canal auditivo e tímpano em tempo real — a explicação passa a ser uma imagem concreta, sem margem para dúvida.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="section section-cream">
+  <div class="container">
+    <div class="funciona-grid">
+      <div>
+        <span class="tag rv">Como funciona</span>
+        <h2 class="s-title rv d1">Diagnóstico na mesma consulta.<br><span class="dim">Sem esperar semanas.</span></h2>
+        <p class="s-lead rv d2" style="margin:1rem 0 2rem">A consulta começa pela escuta: histórico clínico completo, não só a queixa principal. O que já foi tentado. O que não funcionou. O que piorou.</p>
+        <div class="funciona-steps rv d3">
+          <div class="f-step"><span class="f-step-num">01</span><div><h4>Histórico clínico completo</h4><p>Não começa pelo sintoma isolado — começa pela história. Há quanto tempo, o que já foi feito, o que piorou, o que nunca foi investigado.</p></div></div>
+          <div class="f-step"><span class="f-step-num">02</span><div><h4>Endoscopia na própria consulta</h4><p>Quando indicado, nasofibrolaringoscopia e videolaringoscopia realizadas ali mesmo. Você visualiza as vias aéreas em tempo real no mesmo dia — sem aguardar exame externo.</p></div></div>
+          <div class="f-step"><span class="f-step-num">03</span><div><h4>Otoscópio digital com imagem ao vivo</h4><p>O exame do ouvido é projetado em tela. Canal auditivo, tímpano, qualquer alteração — tudo visível para você durante o atendimento, em tempo real.</p></div></div>
+          <div class="f-step"><span class="f-step-num">04</span><div><h4>Diagnóstico e plano de tratamento claro</h4><p>Ao final você sabe o que foi encontrado, por que está acontecendo e qual é o caminho — clínico ou cirúrgico. Sem termos vagos, sem encaminhamentos desnecessários.</p></div></div>
+          <div class="f-step"><span class="f-step-num">05</span><div><h4>Cirurgia como última escolha fundamentada</h4><p>A Dra. Giuliana tem formação cirúrgica de alto nível, mas entende a cirurgia como última escolha. Quando indicada, o paciente entende exatamente por quê.</p></div></div>
+        </div>
+        <a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark rv d4" style="margin-top:2rem">Agendar consulta →</a>
+      </div>
+      <div class="funciona-img rv">
+        <img src="Giuliana-1.jpg" alt="Consultório Dra. Giuliana">
+        <div class="fi-badge"><p><strong>Atendimento particular</strong><br>Tempo real de investigação.<br>Sem pressa. Sem protocolo padrão.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section section-white">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-imgs rv">
+        <img class="si-main" src="Giuliana-83.jpg" alt="Dra. Giuliana Graicer">
+        <img class="si-sec" src="Giuliana-72.jpg" alt="Dra. Giuliana no consultório">
+        <div class="si-stat"><div class="si-stat-n">2024</div><div class="si-stat-l">Fellowship Harvard</div></div>
+      </div>
+      <div class="sobre-text">
+        <span class="tag rv">Sobre a médica</span>
+        <h2 class="s-title rv d1">Residência HC-USP.<br><span class="dim">Fellowship Harvard.</span></h2>
+        <p class="s-lead rv d2">Dra. Giuliana Graicer é otorrinolaringologista graduada pela PUC-SP, com residência no HC-USP e fellowship concluído em 2024 no Massachusetts Eye and Ear — vinculado à Harvard Medical School, referência mundial na especialidade.</p>
+        <p class="s-lead rv d2" style="margin-top:0.75rem">Atende adultos e crianças. Trabalha com clínica e cirurgia. O que define seu atendimento não é só a formação — é a forma como conduz cada caso: com investigação real, exames disponíveis na própria consulta e tempo suficiente para ouvir antes de concluir.</p>
+        <div class="philosophy rv d3"><h4>Filosofia clínica</h4><p>A consulta começa pela história, não pelo sintoma isolado. O que chega como rinite pode ser septo desviado. O que chega como ronco pode ser apneia com risco cardiovascular real. O que chega como infecção de ouvido pode ser questão estrutural que nunca foi endereçada. A Dra. Giuliana trabalha para encontrar a causa — não apenas controlar o sintoma.</p></div>
+        <ul class="timeline rv d3">
+          <li class="tl"><span class="tl-yr">Graduação</span><div><h5>Medicina — PUC-SP</h5><p>Pontifícia Universidade Católica · Sorocaba</p></div></li>
+          <li class="tl"><span class="tl-yr">Residência</span><div><h5>Otorrinolaringologia — HC-USP</h5><p>Hospital das Clínicas FMUSP — referência nacional</p></div></li>
+          <li class="tl"><span class="tl-yr">2020</span><div><h5>Serviço Militar</h5><p>2ª Tenente Médica do Exército Brasileiro</p></div></li>
+          <li class="tl"><span class="tl-yr">2024</span><div><h5>Fellowship Internacional</h5><p>Massachusetts Eye and Ear · Harvard Medical School</p></div></li>
+        </ul>
+        <a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark rv d4">Agendar consulta →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="dif-header">
+      <div><span class="tag tag-dark rv">Diferencial</span><h2 class="s-title s-title-white rv d1">Diagnóstico,<br>não só orientação.</h2></div>
+      <p class="s-lead s-lead-dark rv">Com uma consulta sem pressa, dá para cruzar histórico, exame físico e imagem endoscópica. Dá para diferenciar o que é estrutural do que é inflamatório. Dá para propor um tratamento que faça sentido real — não só o protocolo padrão.</p>
+    </div>
+    <div class="dif-cards rv d1">
+      <div class="dif-card"><div class="dc-num">01</div><div class="dc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Endoscopia na própria consulta</h3><p>Nasofibrolaringoscopia e videolaringoscopia realizadas no mesmo atendimento. Sem encaminhamentos, sem semanas de espera — o diagnóstico acontece no mesmo dia.</p></div>
+      <div class="dif-card"><div class="dc-num">02</div><div class="dc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Otoscópio digital com tela</h3><p>Você vê o que a médica vê — canal auditivo e tímpano em tempo real durante o exame. A explicação deixa de ser abstrata e passa a ser uma imagem concreta.</p></div>
+      <div class="dif-card"><div class="dc-num">03</div><div class="dc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Tempo real de investigação</h3><p>Atendimento particular sem pressa. Cada consulta começa pela história completa — o que já foi feito, o que piorou, o que nunca foi investigado. A causa, não só o sintoma.</p></div>
+    </div>
+    <div class="dif-cta-bar rv d2">
+      <p class="dcb-quote">"Respirar bem e dormir bem começa por <span>entender o que está impedindo isso.</span>"</p>
+      <a href="https://wa.me/5511986030172?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" class="btn btn-light">Agendar consulta<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section id="especialidades" class="section section-cream">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap">
+      <div><span class="tag rv">Especialidades</span><h2 class="s-title rv d1">Áreas de atuação</h2></div>
+      <a href="https://wa.me/5511986030172" target="_blank" class="btn btn-outline rv d2">Falar sobre meu caso →</a>
+    </div>
+    <div class="espec-layout">
+      <div class="espec-nav">
+        <button class="etab active" onclick="setTab('rinite',this)"><span class="etab-dot"></span>Rinite &amp; Respiração</button>
+        <button class="etab" onclick="setTab('apneia',this)"><span class="etab-dot"></span>Apneia do Sono</button>
+        <button class="etab" onclick="setTab('pediatrica',this)"><span class="etab-dot"></span>Otorrino Pediátrica</button>
+        <button class="etab" onclick="setTab('audicao',this)"><span class="etab-dot"></span>Perda Auditiva</button>
+        <button class="etab" onclick="setTab('vertigem',this)"><span class="etab-dot"></span>Vertigem &amp; VPPB</button>
+      </div>
+      <div style="min-height:360px">
+        <div class="epanel active" id="p-rinite">
+          <div><h3>Antialérgico todo dia não é tratamento — é controle de sintoma.</h3><p>Rinite alérgica, rinite não alérgica, sinusite crônica e obstrução nasal têm causas diferentes e precisam de abordagens diferentes. A combinação mais subdiagnosticada: rinite + septo desviado + hipertrofia de cornetos. Você trata a inflamação mas não a estrutura. O nariz continua entupido.</p><p>A investigação inclui nasofibrolaringoscopia na própria consulta, diferenciando o que é inflamação tratável com medicação e o que é estrutura que não vai melhorar com remédio.</p><ul class="elist"><li>Rinite alérgica e não-alérgica</li><li>Desvio de septo nasal — Septoplastia</li><li>Hipertrofia de cornetos — Turbinectomia</li><li>Sinusite crônica — FESS endoscópico</li><li>Polipose nasal — Polipectomia</li><li>Imunoterapia / dessensibilização alérgica</li></ul><a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark">Agendar consulta →</a></div>
+          <div class="epanel-img"><img src="Giuliana-49.jpg" alt="Rinite e respiração"></div>
+        </div>
+        <div class="epanel" id="p-apneia">
+          <div><h3>Ronco intenso e sono que não descansa têm explicação e solução.</h3><p>A apneia obstrutiva do sono é subdiagnosticada e tem consequências cardiovasculares reais — hipertensão resistente, risco cardíaco aumentado, fadiga crônica. Muitos pacientes chegam com anos de sono leve normalizado.</p><p>A Dra. Giuliana realiza avaliação anatômica completa das vias aéreas na própria consulta. Quando indicado, orienta a polissonografia para graduar a apneia e direcionar o plano terapêutico.</p><ul class="elist"><li>Avaliação anatômica das vias aéreas na consulta</li><li>Orientação para polissonografia</li><li>Indicação e acompanhamento de CPAP</li><li>Dispositivo de avanço mandibular</li><li>Uvulopalatofaringoplastia — casos selecionados</li><li>Adenoamigdalectomia — primeira linha infantil</li></ul><a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark">Agendar consulta →</a></div>
+          <div class="epanel-img"><img src="Giuliana-1.jpg" alt="Apneia do sono"></div>
+        </div>
+        <div class="epanel" id="p-pediatrica">
+          <div><h3>Criança que não respira bem não dorme bem, não cresce bem.</h3><p>Adenoide hipertrofiada interfere na respiração, no sono e no crescimento facial. Otite com líquido compromete a audição numa fase crítica para o desenvolvimento da fala. Muitos casos chegam depois de anos ouvindo "vai passar com a idade".</p><p>O exame do ouvido é realizado com otoscópio digital — os pais acompanham tudo em tempo real na tela, junto com a Dra. Giuliana. A explicação passa a ser concreta, não uma descrição.</p><ul class="elist"><li>Adenoide e amígdalas hipertrofiadas</li><li>Rinite e sinusite infantil</li><li>Otite média aguda, crônica e serosa</li><li>Ronco e apneia do sono infantil</li><li>Respiração bucal</li><li>Adenoamigdalectomia e tubo de ventilação (DTT)</li></ul><a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark">Agendar consulta →</a></div>
+          <div class="epanel-img"><img src="Giuliana-72.jpg" alt="Otorrino pediátrica"></div>
+        </div>
+        <div class="epanel" id="p-audicao">
+          <div><h3>Começa com um zumbido, avança em silêncio e tem tratamento.</h3><p>A presbiacusia é a causa mais comum de déficit auditivo acima dos 60 anos e uma das mais subdiagnosticadas. Os sinais chegam aos poucos — primeiro o zumbido, depois a dificuldade de entender conversas, a TV no volume máximo.</p><p>A audiometria é realizada na clínica. A Dra. Giuliana trabalha em parceria com fonoaudióloga para reabilitação auditiva e adaptação de aparelho quando indicado.</p><ul class="elist"><li>Presbiacusia — perda auditiva por envelhecimento</li><li>Zumbido (tinnitus) — avaliação e manejo</li><li>Audiometria na clínica</li><li>Rolha de cera, otite, perfuração timpânica</li><li>Indicação de aparelho auditivo</li><li>Reabilitação fonoaudiológica integrada</li></ul><a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark">Agendar consulta →</a></div>
+          <div class="epanel-img"><img src="Giuliana-83.jpg" alt="Perda auditiva"></div>
+        </div>
+        <div class="epanel" id="p-vertigem">
+          <div><h3>Aquela sensação de que o mundo girou não precisa voltar.</h3><p>A VPPB — doença dos cristais — é a causa mais comum de vertigem em adultos. Não é tratada com remédio: é tratada com manobra de reposicionamento. Quando bem executada, resolve em uma ou poucas sessões — sem cirurgia, sem internação.</p><p>A Dra. Giuliana realiza exame otoneurológico completo e a manobra de Epley na própria consulta. Em muitos casos, o alívio é imediato.</p><ul class="elist"><li>VPPB — Vertigem Posicional Paroxística Benigna</li><li>Manobra de Epley na consulta</li><li>Neurite vestibular</li><li>Doença de Ménière</li><li>Labirintite infecciosa</li><li>Avaliação otoneurológica completa</li></ul><a href="https://wa.me/5511986030172" target="_blank" class="btn btn-dark">Agendar consulta →</a></div>
+          <div class="epanel-img"><img src="Giuliana-49.jpg" alt="Vertigem e VPPB"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="section section-sand">
+  <div class="container">
+    <span class="tag rv">Depoimentos</span>
+    <h2 class="s-title rv d1">O que dizem os pacientes</h2>
+    <div class="depo-grid">
+      <div class="depo rv"><div class="depo-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p class="depo-text">Eu convivi com nariz entupido por anos achando que era normal. Depois da consulta entendi o que estava errado e fiz o tratamento. A diferença na disposição foi imediata.</p><div class="depo-author"><strong>Lucas R.</strong><span>28 anos · Rinologia</span></div></div>
+      <div class="depo rv d1"><div class="depo-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p class="depo-text">Meu filho tinha crises frequentes e passava mal com regularidade. Depois do tratamento, ele passou a dormir melhor. A Dra. foi muito clara em explicar cada etapa para a gente.</p><div class="depo-author"><strong>Carolina A.</strong><span>Mãe do Miguel, 5 anos · Rinite Infantil</span></div></div>
+      <div class="depo rv d2"><div class="depo-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p class="depo-text">Eu dormia mal há anos. Só descobri que era apneia quando fiz a avaliação completa. O tratamento mudou meu sono e minha disposição de forma concreta.</p><div class="depo-author"><strong>Marcelo T.</strong><span>50 anos · Apneia do Sono</span></div></div>
+      <div class="depo rv"><div class="depo-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p class="depo-text">A avaliação foi muito completa, e o tratamento devolveu algo que eu nem percebia o quanto havia perdido. Fiquei impressionada com o nível de detalhamento da consulta.</p><div class="depo-author"><strong>Fernanda M.</strong><span>42 anos · Audição</span></div></div>
+      <div class="depo rv d1"><div class="depo-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p class="depo-text">Sou professora e minha voz é meu instrumento de trabalho. Quando ela começou a falhar, precisei de alguém que entendesse a causa de verdade. O diagnóstico foi preciso e o tratamento funcionou.</p><div class="depo-author"><strong>Ana Paula V.</strong><span>34 anos · Voz</span></div></div>
+      <div class="depo rv d2"><div class="depo-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p class="depo-text">Nossa filha tinha infecções de ouvido com frequência. A Dra. Giuliana avaliou com cuidado e nos explicou o que estava causando. Depois do tratamento, as crises pararam completamente.</p><div class="depo-author"><strong>Roberto S.</strong><span>Pai da Laura, 3 anos · Otologia</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="section section-cream">
+  <div class="container">
+    <div class="contato-grid">
+      <div class="contato-text">
+        <span class="tag rv">Contato</span>
+        <h2 class="s-title rv d1">O primeiro passo é entender o que está acontecendo.</h2>
+        <p class="s-lead rv d2">A consulta é o espaço para isso — com tempo, com os exames necessários e sem a pressa de quem tem o próximo paciente esperando.</p>
+        <div class="ci-list rv d2">
+          <div class="ci"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><div><div class="ci-label">Consultório</div><div class="ci-value">R. da Consolação, 3367 – Cj. 13 · Jardim Paulista, São Paulo – SP · CEP 01416-904</div></div></div>
+          <div class="ci"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><div><div class="ci-label">WhatsApp</div><div class="ci-value">(11) 98603-0172</div></div></div>
+          <div class="ci"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><div class="ci-label">E-mail</div><div class="ci-value">dragiulianagraicer@gmail.com</div></div></div>
+        </div>
+        <a href="https://wa.me/5511986030172?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" class="btn btn-dark rv d3">Agendar pelo WhatsApp<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="form-box rv d2">
+        <h3>Agende sua consulta</h3>
+        <p>Atendimento particular · adultos e crianças · Jardim Paulista, SP</p>
+        <div class="fg-row"><div class="fg"><label>Nome</label><input type="text" placeholder="Seu nome completo"></div><div class="fg"><label>WhatsApp</label><input type="tel" placeholder="(11) 9 9999-9999"></div></div>
+        <div class="fg"><label>Motivo da consulta</label><select><option value="">Selecione...</option><option>Rinite / Respiração / Septo</option><option>Apneia do Sono / Ronco</option><option>Consulta Pediátrica</option><option>Tontura / Vertigem / VPPB</option><option>Perda Auditiva / Zumbido</option><option>Voz / Garganta</option><option>Cirurgia ORL</option><option>Outro</option></select></div>
+        <div class="fg"><label>Mensagem (opcional)</label><textarea placeholder="Descreva brevemente o que está sentindo..."></textarea></div>
+        <a href="https://wa.me/5511986030172?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" class="btn btn-dark" style="width:100%;justify-content:center;margin-top:4px">Enviar pelo WhatsApp<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="Ativo_1_2x.png" alt="Dra. Giuliana Graicer" id="footerLogo">
+      <span class="footer-logo-fallback" id="footerFallback" style="display:none">Dra. Giuliana Graicer</span>
+    </div>
+    <ul class="footer-nav"><li><a href="#sobre">Sobre</a></li><li><a href="#tratamentos">Tratamentos</a></li><li><a href="#especialidades">Especialidades</a></li><li><a href="#depoimentos">Depoimentos</a></li><li><a href="#contato">Contato</a></li></ul>
+    <div class="footer-crm">CRM SP 210131 · Jardim Paulista, São Paulo · © 2026</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5511986030172?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<script>
+document.getElementById('logoImg').onerror=function(){this.style.display='none';document.getElementById('logoFallback').style.display='block'};
+document.getElementById('footerLogo').onerror=function(){this.style.display='none';document.getElementById('footerFallback').style.display='block'};
+function setTab(id,btn){document.querySelectorAll('.epanel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.etab').forEach(t=>t.classList.remove('active'));document.getElementById('p-'+id).classList.add('active');btn.classList.add('active')}
+document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open')});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:0.09,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+document.querySelectorAll('.hero-left .rv').forEach((el,i)=>setTimeout(()=>el.classList.add('vis'),70+i*90));
+window.addEventListener('scroll',()=>{document.getElementById('nav').style.boxShadow=window.scrollY>40?'0 1px 0 rgba(26,25,23,0.06)':'none'});
+</script>
+</body>
+</html>
