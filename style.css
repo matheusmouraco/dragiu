@@ -339,3 +339,97 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   .page-banner{text-align:center}
   .page-banner .tag{margin:0 auto 0.75rem}
 }
+
+/* ── ADIÇÕES v3 (brief Dra Giu) ── */
+:root{
+  --wa:#25D366;--wa-dark:#128C7E;
+}
+.btn-wa{background:var(--wa);color:#fff;gap:8px}
+.btn-wa:hover{background:var(--wa-dark);transform:translateY(-1px)}
+.btn-wa svg{width:17px;height:17px;fill:#fff;flex-shrink:0}
+.nav-wa{background:var(--wa)!important;color:#fff!important;display:flex!important;align-items:center;gap:7px}
+.nav-wa:hover{background:var(--wa-dark)!important}
+.nav-wa svg{width:15px;height:15px;fill:#fff;flex-shrink:0}
+
+/* SPECIALTY BAR */
+.spec-bar{background:var(--ink);position:relative;z-index:1}
+.spec-bar-inner{max-width:var(--max-w);margin:0 auto;padding:0 clamp(1rem,2vw,1.5rem);display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none}
+.spec-bar-inner::-webkit-scrollbar{display:none}
+.spec-link{font-size:0.68rem;font-weight:500;color:rgba(255,255,255,0.45);text-decoration:none;padding:13px 18px;white-space:nowrap;letter-spacing:0.06em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,0.08);transition:all 0.2s;flex-shrink:0}
+.spec-link:first-child{border-left:none}
+.spec-link:hover{color:rgba(255,255,255,0.9);background:rgba(255,255,255,0.05)}
+.spec-link.active{color:var(--wa);border-bottom:2px solid var(--wa)}
+
+/* RONCO SECTION */
+.ronco-section{position:relative;z-index:1;overflow:hidden}
+.ronco-inner{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:600px}
+.ronco-content{padding:clamp(3rem,5vw,5.5rem) clamp(2rem,4vw,4.5rem) clamp(3rem,5vw,5.5rem) clamp(2rem,4vw,5rem);display:flex;flex-direction:column;justify-content:center;background:var(--ink-2)}
+.ronco-tag{font-size:0.65rem;font-weight:700;color:var(--wa);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.ronco-tag::before{content:'';width:18px;height:1.5px;background:var(--wa);display:block}
+.ronco-h2{font-size:clamp(1.9rem,3.2vw,3rem);font-weight:700;color:#fff;letter-spacing:-0.04em;line-height:1.08;margin-bottom:1rem}
+.ronco-h2 span{color:var(--wa)}
+.ronco-sub{font-size:0.91rem;color:rgba(255,255,255,0.5);line-height:1.78;letter-spacing:-0.01em;margin-bottom:1.5rem;max-width:480px}
+.ronco-quote{background:rgba(255,255,255,0.05);border-left:3px solid var(--wa);border-radius:0 10px 10px 0;padding:16px 20px;margin:1.5rem 0;font-size:0.84rem;color:rgba(255,255,255,0.65);font-style:italic;line-height:1.75;letter-spacing:-0.01em}
+.ronco-exams{display:flex;flex-wrap:wrap;gap:8px;margin:1.25rem 0}
+.exam-chip{display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:100px;padding:6px 12px;letter-spacing:-0.01em}
+.exam-chip::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--wa);flex-shrink:0}
+.ronco-img{position:relative;overflow:hidden}
+.ronco-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.ronco-img-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(46,44,42,0.4) 0%,transparent 50%)}
+
+/* QUOTE SECTION */
+.quote-section{background:var(--ink);padding:clamp(3rem,5vw,4.5rem) 0;position:relative;z-index:1}
+.quote-section blockquote{font-size:clamp(1.1rem,2vw,1.6rem);font-weight:600;color:#fff;letter-spacing:-0.03em;line-height:1.4;max-width:760px;margin:0 auto;text-align:center;padding:0 1rem}
+.quote-section blockquote em{color:var(--wa);font-style:normal}
+.quote-author{text-align:center;margin-top:1.25rem;font-size:0.75rem;color:rgba(255,255,255,0.3);letter-spacing:0.04em;text-transform:uppercase}
+
+/* SERVICES GRID */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:2.5rem}
+.svc-card{background:var(--sand-2);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all 0.25s var(--ease)}
+.svc-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(181,130,122,0.12);border-color:var(--rose-pale)}
+.svc-img{height:160px;background:var(--sand);overflow:hidden}
+.svc-img img{width:100%;height:100%;object-fit:cover}
+.svc-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--rose-faint),var(--sand))}
+.svc-img-placeholder svg{width:40px;height:40px;color:var(--rose-2);opacity:0.5}
+.svc-body{padding:1.25rem}
+.svc-tag{font-size:0.62rem;font-weight:600;color:var(--rose);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:0.5rem}
+.svc-title{font-size:0.95rem;font-weight:700;color:var(--ink);letter-spacing:-0.025em;margin-bottom:0.5rem;line-height:1.25}
+.svc-desc{font-size:0.78rem;color:var(--muted);line-height:1.72;letter-spacing:-0.01em}
+
+/* CRED LIST */
+.cred-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:1.5rem}
+.cred-list li{display:flex;align-items:flex-start;gap:12px;font-size:0.84rem;color:var(--ink-2);line-height:1.6;letter-spacing:-0.01em}
+.cred-list li::before{content:'✦';color:var(--rose);flex-shrink:0;font-size:0.75rem;margin-top:3px}
+.cred-list li strong{color:var(--ink);font-weight:600}
+
+/* CLINIC BANNER */
+.clinic-banner{display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;z-index:1;overflow:hidden;min-height:480px}
+.clinic-text{padding:clamp(3rem,5vw,5rem) clamp(2rem,4vw,4.5rem);display:flex;flex-direction:column;justify-content:center;background:var(--sand-2)}
+.clinic-img{position:relative;overflow:hidden}
+.clinic-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+
+/* DEPO HEADER */
+.depo-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.depo-head .s-lead{margin-top:0.5rem}
+
+/* WA ICON */
+.wa-icon{display:inline-flex;flex-shrink:0}
+
+/* responsive additions */
+@media(max-width:1024px){
+  .ronco-inner{grid-template-columns:1fr}
+  .ronco-img{height:340px;position:relative}
+  .ronco-img img{position:static;width:100%;height:340px;object-fit:cover;object-position:top}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .clinic-banner{grid-template-columns:1fr}
+  .clinic-img{height:300px;position:relative}
+  .clinic-img img{position:static;width:100%;height:300px;object-fit:cover;object-position:top}
+  .spec-link{padding:11px 14px;font-size:0.65rem}
+}
+@media(max-width:640px){
+  .ronco-content{padding:2.5rem 1.25rem}
+  .services-grid{grid-template-columns:1fr}
+  .spec-link{padding:10px 12px;font-size:0.62rem}
+  .depo-head{flex-direction:column;align-items:center;text-align:center}
+  .quote-section blockquote{font-size:clamp(1rem,4.5vw,1.3rem)}
+}
