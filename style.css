@@ -358,21 +358,21 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 .spec-link{font-size:0.68rem;font-weight:500;color:rgba(255,255,255,0.45);text-decoration:none;padding:13px 18px;white-space:nowrap;letter-spacing:0.06em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,0.08);transition:all 0.2s;flex-shrink:0}
 .spec-link:first-child{border-left:none}
 .spec-link:hover{color:rgba(255,255,255,0.9);background:rgba(255,255,255,0.05)}
-.spec-link.active{color:var(--wa);border-bottom:2px solid var(--wa)}
+.spec-link.active{color:#fff;border-bottom:2px solid var(--rose-2)}
 
 /* RONCO SECTION */
 .ronco-section{position:relative;z-index:1;overflow:hidden}
 .ronco-inner{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:600px}
 .ronco-content{padding:clamp(3rem,5vw,5.5rem) clamp(2rem,4vw,4.5rem) clamp(3rem,5vw,5.5rem) clamp(2rem,4vw,5rem);display:flex;flex-direction:column;justify-content:center;background:var(--ink-2)}
-.ronco-tag{font-size:0.65rem;font-weight:700;color:var(--wa);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px}
-.ronco-tag::before{content:'';width:18px;height:1.5px;background:var(--wa);display:block}
+.ronco-tag{font-size:0.65rem;font-weight:700;color:var(--rose-2);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.ronco-tag::before{content:'';width:18px;height:1.5px;background:var(--rose-2);display:block}
 .ronco-h2{font-size:clamp(1.9rem,3.2vw,3rem);font-weight:700;color:#fff;letter-spacing:-0.04em;line-height:1.08;margin-bottom:1rem}
-.ronco-h2 span{color:var(--wa)}
+.ronco-h2 span{color:var(--rose-pale)}
 .ronco-sub{font-size:0.91rem;color:rgba(255,255,255,0.5);line-height:1.78;letter-spacing:-0.01em;margin-bottom:1.5rem;max-width:480px}
-.ronco-quote{background:rgba(255,255,255,0.05);border-left:3px solid var(--wa);border-radius:0 10px 10px 0;padding:16px 20px;margin:1.5rem 0;font-size:0.84rem;color:rgba(255,255,255,0.65);font-style:italic;line-height:1.75;letter-spacing:-0.01em}
+.ronco-quote{background:rgba(255,255,255,0.05);border-left:3px solid var(--rose-2);border-radius:0 10px 10px 0;padding:16px 20px;margin:1.5rem 0;font-size:0.84rem;color:rgba(255,255,255,0.65);font-style:italic;line-height:1.75;letter-spacing:-0.01em}
 .ronco-exams{display:flex;flex-wrap:wrap;gap:8px;margin:1.25rem 0}
 .exam-chip{display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:100px;padding:6px 12px;letter-spacing:-0.01em}
-.exam-chip::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--wa);flex-shrink:0}
+.exam-chip::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--rose-2);flex-shrink:0}
 .ronco-img{position:relative;overflow:hidden}
 .ronco-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
 .ronco-img-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(46,44,42,0.4) 0%,transparent 50%)}
@@ -380,7 +380,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 /* QUOTE SECTION */
 .quote-section{background:var(--ink);padding:clamp(3rem,5vw,4.5rem) 0;position:relative;z-index:1}
 .quote-section blockquote{font-size:clamp(1.1rem,2vw,1.6rem);font-weight:600;color:#fff;letter-spacing:-0.03em;line-height:1.4;max-width:760px;margin:0 auto;text-align:center;padding:0 1rem}
-.quote-section blockquote em{color:var(--wa);font-style:normal}
+.quote-section blockquote em{color:var(--rose-2);font-style:normal}
 .quote-author{text-align:center;margin-top:1.25rem;font-size:0.75rem;color:rgba(255,255,255,0.3);letter-spacing:0.04em;text-transform:uppercase}
 
 /* SERVICES GRID */
