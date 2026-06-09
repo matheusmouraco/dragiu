@@ -739,22 +739,21 @@ window.addEventListener('scroll',()=>{document.getElementById('nav').style.boxSh
   const cap = document.getElementById('gsCap');
   const cnt = document.getElementById('gsCount');
   let cur = 0;
-  function go(n){
-    slides[cur].classList.remove('active');
-    thumbs[cur].classList.remove('active');
-    cur = (n + slides.length) % slides.length;
-    slides[cur].classList.add('active');
-    thumbs[cur].classList.add('active');
-    if(cap) cap.textContent = slides[cur].dataset.cap || '';
-    if(cnt) cnt.textContent = (cur+1) + ' / ' + slides.length;
-    // scroll thumb into view
-    thumbs[cur].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  function update(){
+    slides.forEach((s,i)=>s.classList.toggle('active',i===cur));
+    thumbs.forEach((t,i)=>t.classList.toggle('active',i===cur));
+    if(cap) cap.textContent = slides[cur].dataset.cap||'';
+    if(cnt) cnt.textContent = (cur+1)+' / '+slides.length;
   }
-  document.getElementById('gsPrev')?.addEventListener('click',()=>go(cur-1));
-  document.getElementById('gsNext')?.addEventListener('click',()=>go(cur+1));
-  thumbs.forEach((t,i)=>t.addEventListener('click',()=>go(i)));
-  // auto-play
-  setInterval(()=>go(cur+1), 5000);
+  function go(n,scroll){
+    cur=(n+slides.length)%slides.length;
+    update();
+    if(scroll) thumbs[cur].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  }
+  document.getElementById('gsPrev')?.addEventListener('click',()=>go(cur-1,true));
+  document.getElementById('gsNext')?.addEventListener('click',()=>go(cur+1,true));
+  thumbs.forEach((t,i)=>t.addEventListener('click',()=>go(i,true)));
+  setInterval(()=>go(cur+1,false),5000);
 })();
 
 </script>
