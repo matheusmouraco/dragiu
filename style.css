@@ -301,7 +301,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   .nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(250,250,249,0.98);backdrop-filter:blur(20px);flex-direction:column;padding:1rem 1.25rem 1.5rem;border-bottom:1px solid var(--border);gap:4px;z-index:99;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
   .nav-links.open{display:flex}
   .nav-links a{display:flex!important;width:100%;padding:12px 14px;font-size:0.88rem;border-radius:10px;color:var(--ink)}
-  .nav-cta{margin-left:0!important;margin-top:4px;justify-content:center;background:var(--ink)!important}
+  .nav-cta{margin-left:0!important;margin-top:4px;justify-content:center;background:var(--ink)!important;color:#fff!important}
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-right{height:88vw;min-height:260px;order:-1}
   .hero-left{padding:2rem 1.25rem 2.5rem;align-items:center;text-align:center}
@@ -1610,7 +1610,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   letter-spacing:0.1em;text-transform:uppercase;
   margin-bottom:0.75rem;
 }
-.fn-social-icons{display:flex;gap:8px}
+.fn-social-icons{display:flex;gap:8px;flex-wrap:wrap}
 .fn-social-btn{
   width:36px;height:36px;border-radius:9px;
   border:1px solid var(--border-2);
@@ -1997,4 +1997,129 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 @media(max-width:640px){
   .hero-marquee-wrap{ z-index:1 }
   .hero-new-photo{ z-index:4 }
+}
+
+/* ── O QUE FAZEMOS — CAROUSEL HORIZONTAL NO MOBILE ── */
+@media(max-width:640px){
+  /* Remover o padding lateral do container para a galeria sangrar */
+  .svc2-section .container{
+    padding-right:0;
+    overflow:hidden;
+  }
+  /* Header mantém padding */
+  .svc2-header{
+    padding-right:1.25rem;
+  }
+  /* Grid vira scroll horizontal */
+  .svc2-grid{
+    display:flex;
+    flex-direction:row;
+    gap:12px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding:0 1.25rem 1rem;
+    scrollbar-width:none;
+    grid-template-columns:none;
+    /* peek: último card mostra que tem mais */
+    padding-right:calc(1.25rem + 60px);
+  }
+  .svc2-grid::-webkit-scrollbar{display:none}
+
+  /* Cada card: largura fixa pra mostrar o próximo */
+  .svc2-card{
+    flex:0 0 72vw;
+    min-width:72vw;
+    scroll-snap-align:start;
+    border-radius:16px;
+  }
+  /* Imagem mais alta para parecer galeria */
+  .svc2-img{
+    height:220px;
+  }
+
+  /* CTA mantém padding normal */
+  .svc2-cta{
+    padding:0 1.25rem;
+  }
+
+  /* Indicador de scroll — pequenos pontos */
+  .svc2-dots{
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    margin:0.75rem 0 0.25rem;
+  }
+  .svc2-dot{
+    width:5px;height:5px;border-radius:50%;
+    background:var(--rose-pale);transition:background 0.2s;
+  }
+  .svc2-dot.active{background:var(--rose)}
+}
+
+/* Desktop/tablet — dots não aparecem */
+@media(min-width:641px){
+  .svc2-dots{display:none}
+}
+
+/* ── FIX NAV MOBILE: menu hamburger e cor do CTA ── */
+@media(max-width:640px){
+  /* Menu fechado — container oculto */
+  .nav-links{
+    display:none!important;
+    position:fixed;
+    top:68px;left:0;right:0;
+    background:rgba(250,250,249,0.98);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    flex-direction:column;
+    padding:1rem 1.25rem 1.5rem;
+    border-bottom:1px solid var(--border-2);
+    gap:4px;
+    z-index:9999;
+    box-shadow:0 8px 24px rgba(0,0,0,0.1);
+  }
+  /* Menu aberto */
+  .nav-links.open{
+    display:flex!important;
+  }
+  /* Todos os links visíveis quando menu está aberto */
+  .nav-links.open a,
+  .nav-links.open li a{
+    display:flex!important;
+    width:100%;
+    padding:13px 16px;
+    font-size:0.9rem;
+    border-radius:10px;
+    color:var(--ink)!important;
+    text-decoration:none;
+  }
+  /* CTA WhatsApp — fundo escuro, texto branco */
+  .nav-links.open .nav-wa,
+  .nav-links.open a.nav-cta{
+    background:var(--ink)!important;
+    color:#fff!important;
+    margin-top:4px;
+    justify-content:center;
+    gap:8px;
+  }
+  .nav-links.open .nav-wa:hover,
+  .nav-links.open a.nav-cta:hover{
+    background:var(--rose)!important;
+  }
+  /* Ícone do Instagram no menu */
+  .nav-links.open .nav-ig{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    padding:13px 16px;
+    justify-content:flex-start;
+    gap:10px;
+    border:none;
+  }
+  .nav-links.open .nav-ig::after{
+    content:'Instagram';
+    font-size:0.9rem;
+    color:var(--muted);
+  }
 }
