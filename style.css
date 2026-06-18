@@ -250,7 +250,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 .footer-nav{display:flex;gap:0;list-style:none;flex-wrap:wrap}
 .footer-nav a{font-size:0.74rem;color:rgba(255,255,255,0.28);text-decoration:none;padding:5px 10px;border-radius:6px;transition:all 0.2s}
 .footer-nav a:hover{color:rgba(255,255,255,0.7)}
-.footer-crm{font-size:0.65rem;color:rgba(255,240,232,0.22);letter-spacing:-0.01em}
+.footer-crm{font-size:0.65rem;color:var(--muted-2);letter-spacing:-0.01em}
 
 /* WA FLOAT */
 .wa{position:fixed;bottom:26px;right:26px;z-index:200;width:50px;height:50px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:all 0.25s var(--ease)}
@@ -1494,7 +1494,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 /* ── CTA DECISÃO — fundo rosa ── */
 .decisao-section{
   background:#F5E3DF;
-  padding:clamp(4.5rem,8vw,7rem) 0;
+  padding:clamp(2.5rem,4vw,3.5rem) 0;
   text-align:center;
   position:relative;z-index:1;
 }
@@ -1550,12 +1550,13 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 
 /* ── FOOTER NOVO ── */
 .footer-new{
-  background:var(--ink-2);
+  background:#fff;
+  border-top:1px solid var(--border-2);
   position:relative;z-index:1;
 }
 
 /* Grid 4 colunas */
-.fn-main{padding:clamp(3rem,5vw,4.5rem) 0 clamp(2rem,4vw,3rem)}
+.fn-main{padding:clamp(2.5rem,4vw,3.5rem) 0 clamp(1.5rem,3vw,2.5rem)}
 .fn-grid{
   display:grid;
   grid-template-columns:1.6fr 1fr 1fr 1.2fr;
@@ -1574,17 +1575,17 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 }
 .fn-address{
   display:flex;align-items:flex-start;gap:8px;
-  font-size:0.73rem;color:rgba(255,240,232,0.32);
+  font-size:0.73rem;color:var(--muted-2);
   line-height:1.65;letter-spacing:-0.01em;
 }
-.fn-address svg{color:rgba(255,240,232,0.32)}
+.fn-address svg{color:var(--muted-2)}
 
 /* Títulos das colunas */
 .fn-col-title{
   font-size:0.82rem;
   font-weight:600;
   font-style:italic;
-  color:rgba(255,244,238,0.75);
+  color:var(--ink);
   letter-spacing:-0.01em;
   margin-bottom:1rem;
 }
@@ -1593,39 +1594,39 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 .fn-links{list-style:none;display:flex;flex-direction:column;gap:8px}
 .fn-links a{
   font-size:0.76rem;
-  color:rgba(255,244,238,0.35);
+  color:var(--muted);
   text-decoration:none;
   letter-spacing:-0.01em;
   transition:color 0.2s;
   line-height:1.4;
 }
-.fn-links a:hover{color:rgba(255,244,238,0.85)}
+.fn-links a:hover{color:var(--ink)}
 
 /* Redes sociais */
 .fn-social{margin-top:1.5rem}
 .fn-social-label{
   font-size:0.6rem;font-weight:600;
-  color:rgba(255,240,232,0.25);
+  color:var(--muted-2);
   letter-spacing:0.1em;text-transform:uppercase;
   margin-bottom:0.75rem;
 }
 .fn-social-icons{display:flex;gap:8px}
 .fn-social-btn{
   width:36px;height:36px;border-radius:9px;
-  border:1px solid rgba(255,240,232,0.15);
+  border:1px solid var(--border-2);
   display:flex;align-items:center;justify-content:center;
-  color:rgba(255,240,232,0.4);text-decoration:none;
+  color:var(--muted);text-decoration:none;
   transition:all 0.2s;
 }
 .fn-social-btn:hover{
-  border-color:rgba(255,240,232,0.4);
-  color:rgba(255,240,232,0.9);
+  border-color:var(--rose-pale);
+  color:var(--rose);
   background:rgba(255,255,255,0.06);
 }
 
 /* Barra inferior */
 .fn-bottom{
-  border-top:1px solid rgba(255,240,232,0.08);
+  border-top:1px solid var(--border-2);
   padding:1.25rem 0;
 }
 .fn-bottom-inner{
@@ -1638,10 +1639,10 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 }
 .fn-bottom-links{display:flex;gap:1.25rem}
 .fn-bottom-links a{
-  font-size:0.68rem;color:rgba(255,240,232,0.22);
+  font-size:0.68rem;color:var(--muted-2);
   text-decoration:none;letter-spacing:-0.01em;transition:color 0.2s;
 }
-.fn-bottom-links a:hover{color:rgba(255,240,232,0.6)}
+.fn-bottom-links a:hover{color:var(--ink)}
 
 /* responsive */
 @media(max-width:1024px){
@@ -1939,4 +1940,55 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 .gr-google-note{
   font-size:0.68rem;color:var(--muted-2);
   letter-spacing:-0.01em;text-align:center;
+}
+
+/* ── HERO MOBILE: foto colada ao menu, sem espaço ── */
+@media(max-width:640px){
+  .hero-new{
+    min-height:0;
+    height:auto;
+    display:block;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-new-glow-a,
+  .hero-new-glow-b{ display:none }
+  .hero-marquee-wrap{
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    pointer-events:none;
+    z-index:3;
+  }
+  .hero-new-photo{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:100%;
+    margin:0;
+    display:block;
+  }
+  .hero-new-photo img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:0;
+    filter:none;
+  }
+}
+
+/* ── FIM DO SINTOMA: foto completa no mobile ── */
+@media(max-width:640px){
+  .fim-photo-frame{
+    border-radius:16px;
+    overflow:hidden;
+  }
+  .fim-photo-frame img{
+    max-height:none!important;
+    height:auto!important;
+    width:100%;
+    object-fit:cover;
+    object-position:top center;
+    display:block;
+  }
+  .fim-photo-frame::before{ display:none }
 }
