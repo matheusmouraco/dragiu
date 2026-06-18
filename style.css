@@ -1494,9 +1494,29 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 /* ── CTA DECISÃO — fundo rosa ── */
 .decisao-section{
   background:#F5E3DF;
-  padding:clamp(2.5rem,4vw,3.5rem) 0;
+  padding:clamp(3rem,5vw,5rem) 0;
   text-align:center;
-  position:relative;z-index:1;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+  isolation:isolate;
+}
+/* Foto de fundo com efeito multiply */
+.decisao-section::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:url('clinic-bg.jpg');
+  background-size:cover;
+  background-position:center 40%;
+  mix-blend-mode:multiply;
+  opacity:0.55;
+  z-index:0;
+}
+/* Conteúdo na frente */
+.decisao-section .container{
+  position:relative;
+  z-index:2;
 }
 .decisao-title{
   font-size:clamp(2rem,5vw,4.5rem);
