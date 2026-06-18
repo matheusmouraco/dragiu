@@ -1992,3 +1992,9 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   }
   .fim-photo-frame::before{ display:none }
 }
+
+/* ── HERO MOBILE: foto na frente do texto ── */
+@media(max-width:640px){
+  .hero-marquee-wrap{ z-index:1 }
+  .hero-new-photo{ z-index:4 }
+}
