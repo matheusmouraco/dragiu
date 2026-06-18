@@ -1436,7 +1436,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 /* ── FORMAÇÃO & AUTORIDADE ── */
 .autoridade-section{
   background:#fff;
-  padding:clamp(4rem,7vw,6rem) 0 0;
+  padding:clamp(4rem,7vw,6rem) 0 clamp(3rem,5vw,4.5rem);
   position:relative;z-index:1;
 }
 
@@ -1510,7 +1510,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   background-size:cover;
   background-position:center 40%;
   mix-blend-mode:multiply;
-  opacity:0.55;
+  opacity:0.28;
   z-index:0;
 }
 /* Conteúdo na frente */
