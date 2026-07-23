@@ -2271,7 +2271,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 /* ── HERO PÁGINAS INTERNAS ── */
 .ip-hero{padding:clamp(3.5rem,6vw,5.5rem) 0}
 .ip-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:center}
-.ip-hero-h1{font-size:clamp(2.4rem,5vw,5rem);font-weight:700;color:var(--ink);letter-spacing:-0.045em;line-height:0.98;margin:0.6rem 0 1rem}
+.ip-hero-h1{font-size:clamp(1.9rem,3.5vw,3.2rem);font-weight:700;color:var(--ink);letter-spacing:-0.04em;line-height:1.05;margin:0.6rem 0 1rem}
 .ip-hero-sub{font-size:clamp(0.88rem,1.1vw,1rem);color:var(--muted);line-height:1.75;letter-spacing:-0.01em;max-width:440px;margin-bottom:1.75rem}
 .ip-hero-photo{border-radius:20px;overflow:hidden;box-shadow:0 8px 48px rgba(26,16,8,0.12)}
 .ip-hero-photo img{width:100%;display:block;object-fit:cover;object-position:center 20%;height:clamp(320px,45vw,560px)}
@@ -2289,8 +2289,8 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 /* ── FORMAÇÃO ── */
 .ip-formacao{padding:clamp(4rem,6vw,5.5rem) 0}
 .ip-formacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,5vw,6rem);align-items:start}
-.ip-formacao-photo{border-radius:18px;overflow:hidden;position:relative;box-shadow:0 4px 32px rgba(26,16,8,0.1)}
-.ip-formacao-photo img{width:100%;display:block;object-fit:cover;object-position:center 15%;height:clamp(360px,45vw,520px)}
+.ip-formacao-photo{border-radius:18px;overflow:hidden;position:relative;box-shadow:0 4px 32px rgba(26,16,8,0.1);align-self:stretch;display:flex;flex-direction:column}
+.ip-formacao-photo img{width:100%;display:block;object-fit:cover;object-position:center 20%;height:100%;min-height:420px}
 .ip-formacao-note{position:absolute;bottom:0;left:0;right:0;padding:12px 20px;background:linear-gradient(to top,rgba(30,16,8,0.6) 0%,transparent 100%);font-size:0.65rem;font-weight:600;color:rgba(255,244,238,0.8);letter-spacing:0.08em;text-transform:uppercase}
 .ip-timeline{display:flex;flex-direction:column;gap:0}
 .ip-tl{display:grid;grid-template-columns:80px 1fr;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border)}
@@ -2303,7 +2303,7 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 
 /* ── COMO FUNCIONA (sobre) ── */
 .ip-cf{background:var(--sand-2);padding:clamp(4rem,6vw,5.5rem) 0}
-.ip-cf-header{text-align:center;max-width:600px;margin:0 auto clamp(2.5rem,4vw,3.5rem)}
+.ip-cf-header{text-align:left;max-width:100%;margin:0 0 clamp(2.5rem,4vw,3.5rem)}
 .ip-cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,4vw,4rem);align-items:start}
 .ip-cf-foto{border-radius:18px;overflow:hidden;position:sticky;top:100px}
 .ip-cf-foto img{width:100%;display:block;object-fit:cover;height:clamp(280px,40vw,500px)}
@@ -2406,4 +2406,32 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   .ct-main-grid{grid-template-columns:1fr}
   .ip-timeline{gap:0}
   .ip-tl{grid-template-columns:60px 1fr}
+}
+
+/* ── ESPECIALIDADES — hero quick list ── */
+.ip-esp-quick{
+  display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.5rem;
+}
+.ip-esp-quick span{
+  font-size:0.7rem;font-weight:500;color:var(--muted);
+  background:rgba(255,255,255,0.7);
+  border:1px solid var(--border-2);
+  border-radius:100px;padding:5px 12px;
+  letter-spacing:-0.01em;
+}
+
+/* ── FORMAÇÃO — grid alinha altura ── */
+.ip-formacao-grid{align-items:stretch}
+
+/* ── CF-HEADER dentro da coluna ── */
+.ip-cf-header{margin-bottom:1.5rem}
+.ip-cf-header .tag{margin-bottom:0.5rem;display:inline-flex}
+.ip-cf-header .s-title{margin:0.5rem 0 0.75rem;font-size:clamp(1.5rem,2.8vw,2.2rem)}
+.ip-cf-header .s-lead{margin:0 0 0}
+
+/* ── TRATAMENTOS hero — título ajustado ── */
+.tratamentos-hero-title{font-size:clamp(1.8rem,3.2vw,2.8rem)}
+
+@media(max-width:640px){
+  .ip-esp-quick{display:none}
 }
