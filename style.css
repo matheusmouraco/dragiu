@@ -2620,3 +2620,17 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
 .ip-cf{background:var(--sand-2)!important}
 .ip-destaque{background:var(--rose-faint)!important}
 .ip-esp-section{background:#fff!important}
+
+/* ── GALERIA: mostrar mais da imagem (menos crop) ── */
+.gs-slide img{
+  width:100%;height:100%;
+  object-fit:contain !important;
+  object-position:center !important;
+  background:var(--ink-2);
+  display:block;
+}
+/* Fundo do slide também escuro para imagens portrait */
+.gs-slide{background:var(--ink-2)}
+
+/* Altura um pouco menor para não cortar tanto em landscape */
+.gs-track{height:clamp(300px,50vw,560px)}
