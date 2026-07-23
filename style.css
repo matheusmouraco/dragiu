@@ -2144,3 +2144,122 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
     color:var(--muted);
   }
 }
+
+/* ── SOBRE — Hero com imagem ao lado ── */
+.page-banner-hero{
+  background:var(--sand-2);
+  padding:clamp(3.5rem,6vw,5rem) 0;
+  border-bottom:1px solid var(--border-2);
+}
+.pbh-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(2.5rem,5vw,5rem);
+  align-items:center;
+}
+.pbh-photo{
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 4px 40px rgba(26,16,8,0.1);
+}
+.pbh-photo img{
+  width:100%;display:block;
+  object-fit:cover;object-position:center;
+  max-height:420px;
+}
+@media(max-width:768px){
+  .pbh-grid{grid-template-columns:1fr;gap:2rem}
+  .pbh-photo img{max-height:280px}
+}
+
+/* ── SOBRE — 6 passos no cf-steps ── */
+/* Quando há 6 itens, manter 3 colunas */
+.cf-steps .cf-step:nth-child(4),
+.cf-steps .cf-step:nth-child(5),
+.cf-steps .cf-step:nth-child(6){
+  border-top:1px solid var(--border);
+}
+
+/* ── TRATAMENTOS — imagens de quebra ── */
+.trat-img-break{
+  border-radius:18px;
+  overflow:hidden;
+  position:relative;
+  margin:2.5rem 0;
+  box-shadow:0 4px 32px rgba(26,16,8,0.08);
+}
+.trat-img-break img{
+  width:100%;display:block;
+  height:clamp(260px,38vw,480px);
+  object-fit:cover;object-position:center;
+}
+.tib-caption{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  padding:12px 20px;
+  background:linear-gradient(to top,rgba(30,16,8,0.6) 0%,transparent 100%);
+  font-size:0.68rem;font-weight:500;
+  color:rgba(255,244,238,0.8);
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+}
+.trat-img-full-section{
+  background:#fff;
+  padding:0 0 2rem;
+}
+@media(max-width:640px){
+  .trat-img-break img{height:220px}
+  .trat-img-break{margin:1.5rem 0}
+}
+
+/* ── CONTATO — imagens de quebra ── */
+.ct-img-hero{
+  position:relative;
+  overflow:hidden;
+  max-height:500px;
+}
+.ct-img-hero img{
+  width:100%;
+  height:clamp(280px,35vw,500px);
+  object-fit:cover;
+  object-position:center 30%;
+  display:block;
+}
+.ct-img-caption{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  padding:12px 24px;
+  background:linear-gradient(to top,rgba(30,16,8,0.55) 0%,transparent 100%);
+  font-size:0.65rem;font-weight:600;
+  color:rgba(255,244,238,0.8);
+  letter-spacing:0.1em;text-transform:uppercase;
+}
+.ct-img-section{
+  background:#fff;
+  padding:0 0 0;
+}
+.ct-duo{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin:2rem 0;
+}
+.ct-duo-img{
+  border-radius:16px;
+  overflow:hidden;
+}
+.ct-duo-img img{
+  width:100%;
+  height:clamp(220px,28vw,380px);
+  object-fit:cover;
+  object-position:center 20%;
+  display:block;
+  transition:transform 0.4s ease;
+}
+.ct-duo-img:hover img{transform:scale(1.03)}
+
+@media(max-width:640px){
+  .ct-img-hero img{height:220px}
+  .ct-duo{grid-template-columns:1fr;gap:10px}
+  .ct-duo-img img{height:220px}
+}
