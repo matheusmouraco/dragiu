@@ -2572,3 +2572,51 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   .cf-new-img img{height:200px}
   .cf-new-img-badge{font-size:0.65rem;padding:7px 12px}
 }
+
+/* ── FIX: fotos sempre na frente do grid de fundo ── */
+
+/* Seções das páginas internas — stacking context próprio */
+.ip-hero,
+.ip-filosofia,
+.ip-formacao,
+.ip-cf,
+.ip-photos,
+.ip-chips-section,
+.ip-cond-section,
+.ip-destaque,
+.ip-esp-section,
+.trat-full-img,
+.ct-img-hero,
+.ct-img-section{
+  position:relative;
+  z-index:1;
+  isolation:isolate;
+}
+
+/* Foto do hero — sempre na frente */
+.ip-hero-photo{
+  position:relative;
+  z-index:2;
+}
+.ip-hero-photo img{
+  position:relative;
+  z-index:2;
+  background:var(--sand);
+}
+
+/* Foto da formação */
+.ip-formacao-photo{
+  position:relative;
+  z-index:2;
+}
+
+/* Garante que section-sand e section-white tapam o grid */
+.section-sand,.ip-hero.section-sand{
+  background:var(--sand-2)!important;
+}
+.section-white,.ip-formacao.section-white{
+  background:#fff!important;
+}
+.ip-cf{background:var(--sand-2)!important}
+.ip-destaque{background:var(--rose-faint)!important}
+.ip-esp-section{background:#fff!important}
