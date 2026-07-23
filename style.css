@@ -2263,3 +2263,147 @@ footer{background:var(--ink-2);padding:2.5rem 0;position:relative;z-index:1}
   .ct-duo{grid-template-columns:1fr;gap:10px}
   .ct-duo-img img{height:220px}
 }
+
+/* ════════════════════════════════════════
+   PÁGINAS INTERNAS — sistema unificado
+   ════════════════════════════════════════ */
+
+/* ── HERO PÁGINAS INTERNAS ── */
+.ip-hero{padding:clamp(3.5rem,6vw,5.5rem) 0}
+.ip-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:center}
+.ip-hero-h1{font-size:clamp(2.4rem,5vw,5rem);font-weight:700;color:var(--ink);letter-spacing:-0.045em;line-height:0.98;margin:0.6rem 0 1rem}
+.ip-hero-sub{font-size:clamp(0.88rem,1.1vw,1rem);color:var(--muted);line-height:1.75;letter-spacing:-0.01em;max-width:440px;margin-bottom:1.75rem}
+.ip-hero-photo{border-radius:20px;overflow:hidden;box-shadow:0 8px 48px rgba(26,16,8,0.12)}
+.ip-hero-photo img{width:100%;display:block;object-fit:cover;object-position:center 20%;height:clamp(320px,45vw,560px)}
+.ip-hero-badges{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:1.75rem}
+.ip-badge{background:#fff;border:1px solid var(--border-2);border-radius:10px;padding:10px 16px;display:flex;flex-direction:column;gap:2px}
+.ip-badge-num{font-size:0.78rem;font-weight:700;color:var(--ink);letter-spacing:-0.02em}
+.ip-badge-label{font-size:0.62rem;color:var(--muted-2);letter-spacing:0.02em;text-transform:uppercase}
+
+/* ── FILOSOFIA ── */
+.ip-filosofia{background:var(--ink-2);padding:clamp(3rem,5vw,4rem) 0}
+.ip-filosofia-inner{max-width:720px;margin:0 auto;text-align:center}
+.ip-filosofia-quote{font-size:clamp(1.1rem,2vw,1.6rem);font-weight:500;color:#FFF4EE;line-height:1.5;letter-spacing:-0.025em;margin-bottom:1rem;font-style:italic}
+.ip-filosofia-attr{font-size:0.7rem;color:rgba(255,240,232,0.4);letter-spacing:0.08em;text-transform:uppercase}
+
+/* ── FORMAÇÃO ── */
+.ip-formacao{padding:clamp(4rem,6vw,5.5rem) 0}
+.ip-formacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,5vw,6rem);align-items:start}
+.ip-formacao-photo{border-radius:18px;overflow:hidden;position:relative;box-shadow:0 4px 32px rgba(26,16,8,0.1)}
+.ip-formacao-photo img{width:100%;display:block;object-fit:cover;object-position:center 15%;height:clamp(360px,45vw,520px)}
+.ip-formacao-note{position:absolute;bottom:0;left:0;right:0;padding:12px 20px;background:linear-gradient(to top,rgba(30,16,8,0.6) 0%,transparent 100%);font-size:0.65rem;font-weight:600;color:rgba(255,244,238,0.8);letter-spacing:0.08em;text-transform:uppercase}
+.ip-timeline{display:flex;flex-direction:column;gap:0}
+.ip-tl{display:grid;grid-template-columns:80px 1fr;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border)}
+.ip-tl:last-child{border:none}
+.ip-tl-yr{font-family:'Geist Mono',monospace;font-size:0.68rem;font-weight:600;color:var(--muted-2);letter-spacing:0.03em;padding-top:3px}
+.ip-tl.active .ip-tl-yr{color:var(--rose)}
+.ip-tl-body h4{font-size:0.88rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;margin-bottom:3px}
+.ip-tl-body p{font-size:0.78rem;color:var(--muted);line-height:1.65}
+.ip-tl.active .ip-tl-body h4{color:var(--rose)}
+
+/* ── COMO FUNCIONA (sobre) ── */
+.ip-cf{background:var(--sand-2);padding:clamp(4rem,6vw,5.5rem) 0}
+.ip-cf-header{text-align:center;max-width:600px;margin:0 auto clamp(2.5rem,4vw,3.5rem)}
+.ip-cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,4vw,4rem);align-items:start}
+.ip-cf-foto{border-radius:18px;overflow:hidden;position:sticky;top:100px}
+.ip-cf-foto img{width:100%;display:block;object-fit:cover;height:clamp(280px,40vw,500px)}
+.ip-cf-steps{display:flex;flex-direction:column;gap:0}
+.ip-step{display:grid;grid-template-columns:36px 1fr;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--border);align-items:start}
+.ip-step:last-child{border:none}
+.ip-step-n{font-family:'Geist Mono',monospace;font-size:0.62rem;color:var(--rose);font-weight:600;letter-spacing:0.02em;padding-top:3px}
+.ip-step h4{font-size:0.86rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;margin-bottom:3px}
+.ip-step p{font-size:0.77rem;color:var(--muted);line-height:1.7}
+
+/* ── 3 FOTOS (sobre) ── */
+.ip-photos{padding:clamp(3rem,5vw,4.5rem) 0}
+.ip-photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ip-photo{border-radius:14px;overflow:hidden;position:relative}
+.ip-photo img{width:100%;display:block;object-fit:cover;height:clamp(220px,28vw,360px);transition:transform 0.4s ease}
+.ip-photo:hover img{transform:scale(1.03)}
+.ip-photo span{position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(to top,rgba(30,16,8,0.55) 0%,transparent 100%);font-size:0.6rem;font-weight:600;color:rgba(255,244,238,0.8);letter-spacing:0.08em;text-transform:uppercase}
+
+/* ── CHIPS ── */
+.ip-chips-section{padding:clamp(3rem,5vw,4rem) 0}
+
+/* ── TRAT FULL IMG ── */
+.trat-full-img{position:relative;overflow:hidden;max-height:460px}
+.trat-full-img img{width:100%;display:block;height:clamp(220px,32vw,460px);object-fit:cover;object-position:center 35%}
+.tfi-overlay{position:absolute;bottom:0;left:0;right:0;padding:clamp(1.5rem,3vw,2.5rem) clamp(1.25rem,4vw,4rem);background:linear-gradient(to top,rgba(30,16,8,0.65) 0%,transparent 100%)}
+.tfi-overlay.left{left:0;right:auto;width:60%}
+.tfi-overlay p{font-size:clamp(1rem,2.2vw,1.75rem);font-weight:700;color:#FFF4EE;letter-spacing:-0.03em;line-height:1.2}
+.tfi-overlay p span{color:rgba(255,244,238,0.6)}
+
+/* ── CONDIÇÕES ── */
+.ip-cond-section{padding:clamp(3.5rem,6vw,5rem) 0}
+.ip-cond-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:1.5rem}
+.ip-cond-card{background:var(--sand-2);border:1px solid var(--border-2);border-radius:16px;padding:1.75rem;transition:all 0.2s}
+.ip-cond-card:hover{background:var(--rose-faint);border-color:var(--rose-pale)}
+.ip-cond-icon{width:42px;height:42px;border-radius:10px;background:var(--rose-faint);border:1px solid var(--rose-pale);display:flex;align-items:center;justify-content:center;color:var(--rose);margin-bottom:1rem}
+.ip-cond-card h3{font-size:0.9rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;margin-bottom:0.75rem}
+.ip-cond-card ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+.ip-cond-card ul li{font-size:0.77rem;color:var(--muted);padding-left:12px;position:relative;line-height:1.5}
+.ip-cond-card ul li::before{content:'';position:absolute;left:0;top:7px;width:4px;height:4px;border-radius:50%;background:var(--rose-2)}
+
+/* ── DESTAQUE PEDIÁTRICA ── */
+.ip-destaque{background:var(--rose-faint);padding:clamp(4rem,6vw,5.5rem) 0}
+.ip-destaque-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:center}
+.ip-destaque-photo{border-radius:20px;overflow:hidden;box-shadow:0 4px 32px rgba(26,16,8,0.1)}
+.ip-destaque-photo img{width:100%;display:block;object-fit:cover;height:clamp(320px,40vw,500px);object-position:center 20%}
+.ip-destaque-text span.tag{margin-bottom:0.75rem;display:inline-flex}
+.ip-destaque-text h2{font-size:clamp(1.5rem,2.6vw,2.2rem);font-weight:700;color:var(--ink);letter-spacing:-0.035em;line-height:1.15;margin:0.6rem 0 1rem}
+.ip-destaque-text p{font-size:0.88rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem}
+
+/* ── ESPECIALIDADES ── */
+.ip-esp-section{padding:clamp(3.5rem,6vw,5rem) 0}
+.esp-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2.5rem}
+.esp-tab{display:inline-flex;align-items:center;gap:8px;background:var(--sand-2);border:1px solid var(--border-2);border-radius:100px;padding:10px 20px;font-family:'Geist',sans-serif;font-size:0.78rem;font-weight:500;color:var(--muted);cursor:pointer;transition:all 0.2s;letter-spacing:-0.01em}
+.esp-tab:hover{background:var(--rose-faint);border-color:var(--rose-pale);color:var(--rose)}
+.esp-tab.active{background:var(--ink-2);border-color:transparent;color:#FFF4EE}
+.esp-tab.active .etab-dot{background:var(--rose-2)}
+.etab-dot{width:6px;height:6px;border-radius:50%;background:var(--border-2);flex-shrink:0;transition:background 0.2s}
+.esp-panel{display:none}
+.esp-panel.active{display:block}
+.esp-panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:start}
+.esp-panel-photo{border-radius:18px;overflow:hidden;position:relative;box-shadow:0 4px 28px rgba(26,16,8,0.1)}
+.esp-panel-photo img{width:100%;display:block;object-fit:cover;height:clamp(280px,38vw,480px);object-position:center 25%}
+.esp-panel-label{position:absolute;bottom:0;left:0;right:0;padding:10px 16px;background:linear-gradient(to top,rgba(30,16,8,0.55) 0%,transparent 100%);font-size:0.62rem;font-weight:600;color:rgba(255,244,238,0.8);letter-spacing:0.08em;text-transform:uppercase}
+.esp-panel-content h3{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:700;color:var(--ink);letter-spacing:-0.035em;line-height:1.2;margin-bottom:1rem}
+.esp-panel-content p{font-size:0.86rem;color:var(--muted);line-height:1.8;letter-spacing:-0.01em}
+
+/* ── CONTATO ── */
+.ct-info-cards{display:flex;flex-direction:column;gap:10px;margin-bottom:1.75rem}
+.ct-ic{display:flex;align-items:flex-start;gap:10px;font-size:0.8rem;color:var(--muted);line-height:1.6}
+.ct-ic svg{flex-shrink:0;color:var(--rose);margin-top:3px}
+.ct-main-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(2.5rem,5vw,5rem);align-items:start}
+.ct-sidebar h2{font-size:1.5rem}
+.ct-map-placeholder{background:var(--sand-2);border:1px solid var(--border-2);border-radius:14px;padding:2rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.5rem}
+.ct-map-placeholder p{font-size:0.8rem;color:var(--muted);line-height:1.7;margin:0}
+.ct-social-box{margin-top:1.5rem}
+.ct-social-box h4{font-size:0.82rem;font-weight:600;color:var(--ink);margin-bottom:1rem;letter-spacing:-0.02em}
+.ct-social-links{display:flex;flex-direction:column;gap:10px}
+.ct-sl{display:flex;align-items:center;gap:10px;font-size:0.78rem;color:var(--muted);text-decoration:none;padding:10px 14px;border-radius:10px;border:1px solid var(--border-2);transition:all 0.2s}
+.ct-sl:hover{background:var(--rose-faint);border-color:var(--rose-pale);color:var(--rose)}
+
+/* ── RESPONSIVO GLOBAL PÁGINAS INTERNAS ── */
+@media(max-width:1024px){
+  .ip-hero-grid,.ip-formacao-grid,.ip-cf-grid,.ip-destaque-grid,.esp-panel-grid,.ct-main-grid{grid-template-columns:1fr;gap:2.5rem}
+  .ip-cf-foto{position:static}
+  .ip-photos-grid{grid-template-columns:1fr 1fr}
+  .ip-photo:last-child{display:none}
+  .ip-cond-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .ip-hero-h1{font-size:clamp(2rem,9vw,3.2rem)}
+  .ip-hero-badges{gap:8px}
+  .ip-badge{padding:8px 12px}
+  .ip-photos-grid{grid-template-columns:1fr 1fr}
+  .ip-photo:last-child{display:block}
+  .ip-photo img{height:160px}
+  .ip-cond-grid{grid-template-columns:1fr}
+  .tfi-overlay.left{width:100%}
+  .esp-tabs{gap:6px}
+  .esp-tab{font-size:0.72rem;padding:8px 14px}
+  .ct-main-grid{grid-template-columns:1fr}
+  .ip-timeline{gap:0}
+  .ip-tl{grid-template-columns:60px 1fr}
+}
